@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timbre Fiscal DZ – Timbre fiscal et escompte pour Odoo 17 (Algérie)</title>
+<meta name="description" content="Module Odoo 17 pour l'Algérie : calcul automatique du timbre fiscal (droit de timbre) et de l'escompte sur factures, ventes et achats. Tranches et modes de paiement paramétrables.">
+<meta name="keywords" content="timbre fiscal Odoo, droit de timbre Odoo Algérie, escompte Odoo 17, localisation algérienne Odoo, l10n_dz, Algerian fiscal stamp Odoo">
+<link rel="canonical" href="https://nesreddine.github.io/timbre-fiscal-dz-docs/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Timbre Fiscal DZ – Timbre fiscal et escompte pour Odoo 17">
+<meta property="og:description" content="Calcul automatique du timbre fiscal algérien et de l'escompte sur factures, ventes et achats dans Odoo 17.">
+<meta property="og:image" content="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/banner.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Algeria - Fiscal Stamp & Cash Discount (Timbre Fiscal & Escompte)",
+  "alternateName": "timbre_fiscal_dz",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Odoo 17",
+  "author": {"@type": "Person", "name": "Nasreddine Boudene", "url": "https://www.linkedin.com/in/nasreddineboudene/"},
+  "offers": {"@type": "Offer", "price": "39.00", "priceCurrency": "USD", "url": "https://apps.odoo.com/apps/modules/17.0/timbre_fiscal_dz"}
+}
+</script>
+<style>
+  :root { --green:#0b5d3b; --green-dark:#07402a; --ink:#1c2420; --muted:#5b6660; --bg:#f6f8f6; --card:#ffffff; --line:#dfe6e1; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:0 16px; }
+  header { background:var(--green); color:#fff; padding:40px 0 36px; }
+  header p.tag { margin:0 0 8px; font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; opacity:.85; }
+  h1 { margin:0 0 12px; font-size:1.9rem; line-height:1.2; }
+  header p.lead { margin:0 0 24px; font-size:1.05rem; max-width:620px; }
+  .btn { display:inline-block; background:#fff; color:var(--green-dark); font-weight:700; text-decoration:none; padding:12px 22px; border-radius:6px; }
+  .btn.dark { background:var(--green); color:#fff; }
+  .price { display:inline-block; margin-left:14px; font-weight:600; }
+  main { padding:32px 0 8px; }
+  section { margin-bottom:36px; }
+  h2 { font-size:1.35rem; margin:0 0 12px; color:var(--green-dark); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  ul { padding-left:20px; margin:0; }
+  li { margin-bottom:6px; }
+  .steps { display:grid; gap:20px; }
+  .step { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .step h3 { margin:0 0 6px; font-size:1.05rem; }
+  .step p { margin:0 0 12px; color:var(--muted); }
+  code { background:#e9efeb; padding:2px 6px; border-radius:4px; font-size:.92em; }
+  .en { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px; }
+  footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--muted); font-size:.92rem; }
+  footer a, main a { color:var(--green); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="tag">Module Odoo 17 · Localisation Algérie</p>
+    <h1>Timbre Fiscal DZ : timbre fiscal et escompte dans Odoo</h1>
+    <p class="lead">Calcul automatique du timbre fiscal algérien (droit de timbre) et de l'escompte sur les factures, les bons de commande clients et fournisseurs. Entièrement paramétrable.</p>
+    <a class="btn" href="https://apps.odoo.com/apps/modules/17.0/timbre_fiscal_dz">Voir sur l'Odoo Apps Store</a>
+    <span class="price">39 $ · Odoo 17.0</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <img src="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/banner.png" alt="Timbre Fiscal DZ, module de gestion du timbre fiscal algérien pour Odoo 17">
+  </section>
+
+  <section>
+    <h2>Ce que fait le module</h2>
+    <ul>
+      <li>Activation du timbre fiscal depuis les paramètres de facturation.</li>
+      <li>Tranches de timbre fiscal configurables.</li>
+      <li>Choix des modes de paiement qui déclenchent le timbre (par exemple Espèces).</li>
+      <li>Calcul automatique du timbre dès que le mode de paiement concerné est sélectionné.</li>
+      <li>Calcul de l'escompte selon le mode de paiement, uniquement pour les produits où l'option Escompte est activée.</li>
+      <li>Prise en charge des factures, des commandes clients et des commandes fournisseurs.</li>
+      <li>Affichage du timbre et de l'escompte sur les rapports PDF.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Configuration en 4 étapes</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Activer le timbre fiscal</h3>
+        <p>Dans la configuration de la facturation, activez l'option de calcul du timbre.</p>
+        <img src="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/screenshot_03.png" alt="Activation du calcul du timbre fiscal dans les paramètres de facturation Odoo 17" loading="lazy">
+      </div>
+      <div class="step">
+        <h3>2. Définir les tranches</h3>
+        <p>Créez et modifiez les tranches qui déterminent le montant du timbre.</p>
+        <img src="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/screenshot_01.png" alt="Configuration des tranches du timbre fiscal algérien dans Odoo" loading="lazy">
+      </div>
+      <div class="step">
+        <h3>3. Choisir les modes de paiement</h3>
+        <p>Indiquez quels modes de paiement déclenchent le timbre et l'escompte.</p>
+        <img src="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/screenshot_04.png" alt="Mode de paiement configuré pour le timbre fiscal et l'escompte dans Odoo" loading="lazy">
+      </div>
+      <div class="step">
+        <h3>4. Facturer</h3>
+        <p>Le timbre et l'escompte apparaissent sur les factures, les commandes et les rapports.</p>
+        <img src="https://apps.odoocdn.com/apps/assets/17.0/timbre_fiscal_dz/screenshot_02.png" alt="Facture Odoo 17 avec timbre fiscal et escompte calculés automatiquement" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Installation</h2>
+    <ul>
+      <li>Version : Odoo 17.0 (Community ou Enterprise, On Premise ou Odoo.sh).</li>
+      <li>Dépendances Odoo : <code>l10n_dz</code>, <code>sale</code>, <code>purchase</code>.</li>
+      <li>Dépendance OCA : <code>account_payment_mode</code> (projet <a href="https://github.com/OCA/bank-payment">OCA/bank-payment</a>), à installer avant le module.</li>
+      <li>Nom technique : <code>timbre_fiscal_dz</code> · Licence : AGPL-3.</li>
+    </ul>
+  </section>
+
+  <section class="en" lang="en">
+    <h2>English summary</h2>
+    <p><strong>Algeria – Fiscal Stamp &amp; Cash Discount</strong> is an Odoo 17 localization module that automatically computes the Algerian fiscal stamp (droit de timbre) and cash discount (escompte) on invoices, sales orders and purchase orders. Stamp brackets and triggering payment modes are fully configurable, and amounts are printed on PDF reports.</p>
+    <a class="btn dark" href="https://apps.odoo.com/apps/modules/17.0/timbre_fiscal_dz">Get it on the Odoo Apps Store</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Développé et maintenu par <a href="https://www.linkedin.com/in/nasreddineboudene/">Nasreddine Boudene</a>.
+    Support : <a href="mailto:nesreddineboudene@gmail.com">nesreddineboudene@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
